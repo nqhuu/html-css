@@ -1,0 +1,130 @@
+/* reset  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font trang web */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    position: relative;
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+
+}
+
+#nav li {
+    list-style-type: none;
+    position: relative;
+
+}
+
+#nav>li {
+    display: inline-block;
+
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+#nav li a {
+    text-decoration: none;
+}
+
+#nav>li>a {
+    color: #fff;
+    line-height: 46px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    display: block;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav li a {
+    color: #000;
+    display: block;
+    padding: 12px 8px;
+    min-width: 150px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 70%;
+}
+
+#header .search-btn {
+    color: #fff;
+    float: right;
+    padding: 0 25px;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+
+}
+
+#header .search-btn .search-icon {
+    line-height: 46px;
+}
+
+
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/w3_band/assets/img/slider/chicago.jpg) no-repeat top center / cover;
+    position: relative;
+}
+
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+    bottom: 0;
+    width: 100%;
+}
+
+#slider .content-header {
+    padding-bottom: 40px;
+    font-weight: 800;
+}
+
+#content {
+    height: 5000px;
+
+}
+
+#footer {}
