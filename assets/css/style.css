@@ -11,10 +11,12 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#main {
-    position: relative;
+#main {}
 
+.text-white {
+    color: #fff !important;
 }
+
 
 #header {
     height: 46px;
@@ -105,14 +107,14 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url(/html-css/assets/img/slider/chicago.jpg) no-repeat top center / cover
+    background: url(/w3_band/assets/img/slider/chicago.jpg) no-repeat top center / cover
 }
 
 #slider .text-content {
     position: absolute;
     color: #fff;
     text-align: center;
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
     bottom: 0;
     width: 100%;
 }
@@ -122,35 +124,90 @@ html {
     font-weight: 800;
 }
 
-#content {
+#content {}
 
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    overflow: hidden;
 }
 
-#content .content-section{
-        width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 64px 16px;
-    }
-#content .section-heading{
-        text-align: center;
-        margin: 10px 0;
-        letter-spacing: 7px;
-        font-weight: 500;
-    }
-#content .section-sub-heading{
+#content .section-heading {
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 7px;
+    font-weight: 500;
+}
+
+#content .section-sub-heading {
     text-align: center;
     opacity: 0.6;
     font-style: italic;
     font-size: 15px;
-    }
-#content .about-text{
+}
+
+#content .about-text {
     text-align: justify;
     margin: 15px 0;
     font-size: 15px;
+}
 
-    }
+/* ********************** */
 
-#content 
+#content .member-item {
+    float: left;
+    text-align: center;
+    padding: 32px 0;
+    width: 33.3333%
+}
 
-#footer {}
+#content .member-name {
+    font-size: 15px;
+    text-align: center;
+}
+
+#content .member-ava {
+    width: 154px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#content .clear {
+    overflow: hidden;
+}
+
+
+#content .Tour-section {
+    background-color: #000;
+}
+
+
+
+#content .Tour-section li {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 16px;
+}
+
+#content .Tour-section .status {
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 4px 8px;
+}
+
+#content .Tour-section .number-circle {
+    float: right;
+    margin: 0 16px 0 0;
+    padding: 0 8px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    font-family: lato;
+}
+
+#content .member-item {}
+
+.me #content #footer {}
