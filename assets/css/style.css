@@ -26,6 +26,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
+    /* z-index: set ưu tiên nổi cho thẻ */
 }
 
 #nav {
@@ -73,6 +74,7 @@ html {
     display: none;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: Đổ bóng cho chủ thể */
 }
 
 #nav .subnav li a {
@@ -181,6 +183,7 @@ html {
 
 #content .Tour-section {
     background-color: #000;
+    /* margin-bottom: 38px; */
 }
 
 
@@ -200,12 +203,80 @@ html {
 
 #content .Tour-section .number-circle {
     float: right;
-    margin: 0 16px 0 0;
-    padding: 0 8px;
+    /* margin: 0 16px 0 0;
+    padding: 0 8px; */
+    height: 24px;
+    width: 24px;
     color: #fff;
     background-color: #000;
     text-align: center;
-    font-family: lato;
+    border-radius: 50%;
+    line-height: 24px;
+}
+
+#content .month-list {
+    margin-top: 40px;
+    list-style: none;
+}
+
+/* Tour */
+
+
+.tour-list {
+    margin: 36px -8px 48px -8px;
+    overflow: hidden;
+}
+
+.tour-item {
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+
+.tour-img {
+    width: 100%;
+    display: block;
+}
+
+.tour-img:hover {
+    opacity: 0.6;
+}
+
+
+.tour-name {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.tour-address {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.tour-date {
+    margin: 15px 0;
+    color: #757575;
+}
+
+.tour-discription {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.buy-tickets {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    text-align: center;
+}
+
+.buy-tickets:hover {
+    background-color: #ccc;
+    color: #000;
 }
 
 #content .member-item {}
