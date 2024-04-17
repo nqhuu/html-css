@@ -139,6 +139,7 @@ html {
 #content .section-heading {
     text-align: center;
     margin: 10px 0;
+    /* xác định khoảng cách giữa các ký tự trong 1 từ của ddoanj văn bản */
     letter-spacing: 7px;
     font-weight: 500;
 }
@@ -209,13 +210,16 @@ html {
     width: 24px;
     color: #fff;
     background-color: #000;
+    /* căn giữa dòng */
     text-align: center;
     border-radius: 50%;
+    /* chiều cao dòng */
     line-height: 24px;
 }
 
 #content .month-list {
     margin-top: 40px;
+    /* sử dụng để xác định kiểu của các đánh dấu đầu dòng của thẻ li, none là loại bỏ */
     list-style: none;
 }
 
@@ -224,6 +228,7 @@ html {
 
 .tour-list {
     margin: 36px -8px 48px -8px;
+    /* float sẽ làm thay đổi độ bao bọc của thẻ cha nên t sử sụng overflow: hidden để loại bỏ cái đó */
     overflow: hidden;
 }
 
@@ -251,6 +256,7 @@ html {
 
 .tour-address {
     font-size: 15px;
+    /* độ dày của chữ */
     font-weight: 600;
     margin: 15px 0;
 }
@@ -262,6 +268,7 @@ html {
 
 .tour-discription {
     margin: 15px 0;
+    /* line-height chiều cao cho dòng chữ */
     line-height: 1.6;
 }
 
@@ -282,3 +289,78 @@ html {
 #content .member-item {}
 
 .me #content #footer {}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* nó trở thành một container linh hoạt và các phần tử con bên trong nó sẽ tuân theo các quy tắc linh hoạt của flexbox. */
+    display: flex;
+    /* các thuộc tính đi theo: */
+    /*flex-direction: row; Sắp xếp các phần tử con theo hàng (mặc định) */
+    justify-content: center;
+    /* Căn chỉnh các phần tử con vào giữa theo chiều chính (theo hàng) */
+    align-items: center;
+    /* Căn chỉnh các phần tử con vào giữa theo chiều phụ (theo cột) */
+    /*flex-wrap: wrap;  Cho phép các phần tử con xuống dòng khi không đủ không gian */
+    /* position: relative; */
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+}
+
+.modal-header {
+    height: 129px;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.modal-bag-icon {
+    padding-right: 15px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    opacity: 0.8;
+    background-color: #ccc;
+    color: #000;
+}
+
+
+
+.modal-body {
+    padding: 15px;
+}
+
+.modal-label {
+    display: block;
+    padding: 12px 0;
+    font-size: 15px;
+}
+
+.madal-input {
+    display: block;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+}
