@@ -312,6 +312,9 @@ html {
 .modal-container {
     background-color: #fff;
     width: 900px;
+    /* cho chiều ngang tối đa bằng 100% - 16px để trong trường hợp màn hình co nhỏ
+    hơn 900 thì width sẽ bằng 100% - 16px để tránh bảng đính vào mép trình duyệt */
+    max-width: calc(100% - 16px);
     min-height: 200px;
     position: relative;
 }
@@ -356,6 +359,7 @@ html {
     display: block;
     padding: 12px 0;
     font-size: 15px;
+    margin-top: 15px;
 }
 
 .madal-input {
@@ -363,4 +367,33 @@ html {
     font-size: 15px;
     width: 100%;
     padding: 10px;
+}
+
+#modal-buy-tickets {
+    display: block;
+    width: 100%;
+    background-color: #009688;
+    border: none;
+    padding: 16px;
+    margin: 16px 0;
+    color: #fff;
+    font-size: 15px;
+    /* làm đậm chữ */
+    text-transform: uppercase;
+}
+
+#modal-buy-tickets:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.modal-footer {
+    text-align: right;
+    line-height: 1.4;
+    padding: 15px;
+}
+
+.modal-footer a {
+    color: #2196F3;
 }

@@ -161,18 +161,25 @@
             </header>
             <div class="modal-body">
                 <!-- thẻ label để sử dụng làm nhãn cho các phần tử có đầu vào input -->
-                <label for="" class="modal-label">
+                <label for="quantity" class="modal-label">
                     <i class="ti-shopping-cart"></i>
                     Tickets, $15 per person
                 </label>
-                <input type="text" class="madal-input" placeholder="How many?">
+                <input id="quantity" type="text" class="madal-input" placeholder="How many?">
 
-                <label for="" class="modal-label">
+                <label for="email" class="modal-label">
                     <i class="ti-user"></i>
                     Send To
                 </label>
-                <input type="email" class="madal-input" placeholder="Enter email.">
+                <input id="email" type="email" class="madal-input" placeholder="Enter email.">
+                <button id="modal-buy-tickets">
+                    PAY
+                    <i class="ti-check"></i>
+                </button>
             </div>
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer>
         </div>
     </div>
 </body>
