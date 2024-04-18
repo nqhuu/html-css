@@ -1,5 +1,5 @@
 /* reset  */
-
+/************************ common - dùng chung */
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +11,38 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#main {}
-
 .text-white {
     color: #fff !important;
 }
+
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+
+
+/* *************************************main */
+#main {}
+
 
 
 #header {
@@ -159,12 +186,6 @@ html {
 
 /* ********************** */
 
-#content .member-item {
-    float: left;
-    text-align: center;
-    padding: 32px 0;
-    width: 33.3333%
-}
 
 #content .member-name {
     font-size: 15px;
@@ -227,15 +248,16 @@ html {
 
 
 .tour-list {
-    margin: 36px -8px 48px -8px;
+    /* margin: 36px -8px 48px -8px; */
     /* float sẽ làm thay đổi độ bao bọc của thẻ cha nên t sử sụng overflow: hidden để loại bỏ cái đó */
+    margin-top: 36px;
+    margin-bottom: 48px;
     overflow: hidden;
 }
 
 .tour-item {
-    float: left;
-    width: 33.3333%;
-    padding: 0 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .tour-img {
