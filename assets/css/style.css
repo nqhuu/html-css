@@ -8,7 +8,9 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+html p {
+    font-size: 18px;
+}
 
 
 /* *************************************main */
@@ -80,6 +82,7 @@ html {
 
 .menu-header li:hover .sub-menu-header {
     display: block;
+    z-index: 1;
 }
 
 .menu-header .sub-menu-header {
@@ -106,10 +109,10 @@ html {
 
 #slider {
     position: relative;
+
 }
 
 .slider-img {
-    position: absolute;
     display: block;
     height: 50%;
     width: 100%;
@@ -117,3 +120,109 @@ html {
     left: 0;
     object-fit: cover;
 }
+
+#slider .btn {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+#slider .xemct {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 20px;
+    min-width: 150px;
+    border-radius: 20px;
+    margin: 0 5px;
+    text-align: center;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+
+}
+
+#slider a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#slider .list {
+    position: relative;
+}
+
+#slider .list-lh {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+#slider .list-lh .item {
+    display: inline-block;
+    padding: 20px 10px;
+    background-color: #fff;
+    width: calc(100%);
+    text-transform: uppercase;
+    min-width: 300px;
+    text-align: center;
+}
+
+.list-lh div[class*="ti-"] {
+    margin: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.ti-light-bulb {
+    margin-right: 15px;
+}
+
+#content .container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+}
+
+#content .container .center770px {
+    width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#content .sub-container-list {
+    text-align: center;
+}
+
+#content .sub-container-list p {
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+#content .list {
+    width: 50%;
+    float: left;
+
+}
+
+#content .list-th li {
+    list-style-type: none;
+    text-align: justify;
+}
+
+#content .list-th .ti-check-box {
+    padding-right: 10px;
+    padding-bottom: 24px;
+    color: red;
+}
+
+/* #content .list-th .list {
+    padding-left: 22px;
+}
+
+#content .list-th .list2 {
+    margin-left: 30px;
+} */
