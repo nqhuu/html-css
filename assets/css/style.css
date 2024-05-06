@@ -17,7 +17,15 @@ body {
 }
 
 .paddingtop-bot {
-    padding: 30px 0 100px;
+    padding: 60px 0 100px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.font-size {
+    font-size: 34px;
 }
 
 /* *************************************main */
@@ -62,6 +70,10 @@ body {
 
 }
 
+.sub-menu-header {
+    margin-left: -20px;
+}
+
 .menu-header>li:hover,
 .sub-menu-header>li:hover {
     background-color: #ccc;
@@ -69,6 +81,7 @@ body {
 
 .sub-menu-header li:hover a {
     color: #000;
+
 }
 
 .menu-header li {
@@ -196,8 +209,15 @@ body {
     padding-top: 80px;
 }
 
-#content .container .center770px {
+#content .center770px {
     width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.center1170px {
+    width: 1170px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -205,6 +225,7 @@ body {
 
 #content .sub-container-list {
     text-align: center;
+    /* margin-left: auto; */
 }
 
 #content .sub-container-list p {
@@ -220,7 +241,8 @@ body {
 
 #content .list-th li {
     list-style-type: none;
-    /* text-align: justify; */
+    padding-bottom: 15px;
+
 }
 
 #content .list-th .ti-check-box {
@@ -233,6 +255,267 @@ body {
     padding: 0 22px;
 }
 
-#content .list-th  {
+#content .list-th {
     margin: 0 -22px;
+    padding-bottom: 20px;
+    overflow: hidden;
+
+}
+
+.btn-gt {
+    display: block;
+    text-align: center;
+}
+
+
+
+.btn-gt:hover a {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-gt a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    line-height: 40px;
+    padding: 0 40px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.spHome .btn-gt a {
+    background-color: #fff;
+    border: none;
+}
+
+.spHome .btn-gt {
+    padding-top: 350px;
+}
+
+.spHome .btn-gt:hover a {
+    background-color: #000;
+    color: #fff;
+}
+
+.spHome {
+    background-color: #3f3f3f;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.sup-spHome {
+    margin-bottom: 50px;
+}
+
+.sup-spHome .title {
+    margin-bottom: 30px;
+}
+
+.sanPhamDichVu .title-sp {
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sanPhamDichVu .title-sp a {
+    text-decoration: none;
+}
+
+.sup-spHome .decs {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 60px;
+    padding-top: 20px;
+    line-height: 24px;
+}
+
+/* .spHome .list-sp {
+    padding-bottom: 20px;
+} */
+
+.list-sp li {
+    width: 25%-14px;
+    float: left;
+    list-style-type: none;
+    padding-left: 14px;
+    margin: 0 5px;
+}
+
+
+.list-sp .img-sp {
+    width: 264px;
+    height: 264px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.list-sp li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.vsChon {
+    background-color: #1c1c1c;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.desc.center {
+    padding: 20px 60px 0 60px;
+    line-height: 24px;
+}
+
+.list-chon .item-chon {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: scale-down;
+}
+
+.vsChon .list-chon {
+    overflow: hidden;
+}
+
+.vsChon .list-chon li {
+    float: right;
+    width: 20%;
+    list-style-type: none;
+    padding: 50px 15px 0 15px;
+    text-align: center;
+}
+
+.vsChon .list-chon p {
+    padding-top: 40px;
+    line-height: 24px;
+}
+
+.tinHome {
+    background-color: #2f2f2f;
+}
+
+.tinHome .bao-tt {
+    padding-bottom: 50px;
+}
+
+.tinHome .list-tinTuc {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.tinHome .list-tinTuc li {
+    display: block;
+    float: right;
+    width: 30%;
+    height: 290px;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.tinHome li img {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 208px;
+
+}
+
+.tinHome li p {
+    position: absolute;
+    top: 208px;
+    left: 0;
+    text-align: left;
+    padding: 10px;
+    font-weight: 540;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.tinHome .btn-gt a {
+    background-color: #fff;
+}
+
+.tinHome .btn-gt:hover a {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/**************** footer***************** */
+
+#footer {
+    background-color: #202020;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+#footer .container>div {
+    float: left;
+}
+
+#footer .container {
+    overflow: hidden;
+}
+
+
+#footer .contact-hp {
+    display: inline-block;
+    width: 50%;
+}
+
+#footer .title {
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#footer .contact-hp div:not(:first-child) {
+    padding-bottom: 8px;
+    line-height: 22px;
+}
+
+#footer .contact-hp span {
+    padding-right: 10px;
+}
+
+#footer .menu-ft {
+    width: 25%;
+    text-decoration: none;
+    line-height: 22px;
+    padding-left: 30px;
+}
+
+#footer .menu-ft a {
+    display: block;
+    padding-bottom: 8px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer .bot-ft {
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #333;
 }
